@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="4dp"
+    android:paddingLeft="4dp"
+    android:paddingTop="10dp">
+
+    <EditText
+        android:id="@+id/txt_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username"/>
+    <EditText
+        android:id="@+id/txt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_username"
+        android:inputType="textPassword"
+        android:hint="Password"/>
+    <EditText
+        android:id="@+id/txt_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_aligntParentStart="true"
+        android:layout_below="@id/txt_password"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email"/>
+    <EditText
+        android:id="@+id/txt_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_aligntParentLeft="true"
+        android:layout_aligntParentStart="true"
+        android:layout_below="@id/txt_email"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Phone"/>
+    <TextView
+        android:id="@+id/tv_kelamin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jenis Kelamin"
+        android:layout_marginTop="14dp"
+        android:layout_below="@id/txt_phone"
+        android:layout_aligntParentLeft="true"
+        android:layout_aligntParentStart="true"/>
+
+    <RadioButton
+        android:id="@+id/rLak"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Laki-laki"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layoutaligntBaseline="@+id/tv_kelamin"
+        android:layout_aligntBottom="@+id/tv_kelamin"
+        android:layout_toRightOf="@id/tv_kelamin"
+        android:layout_toEndOf="@id/tv_kelamin"/>
+    <RadioButton
+        android:id="@+id/rPerempuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Perempuan"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp"
+        android:layoutaligntBaseline="@+id/rLak"
+        android:layout_aligntBottom="@+id/rLak"
+        android:layout_toRightOf="@id/rLak"
+        android:layout_toEndOf="@id/rLak" />
+    <Button
+        android:id="@+id/bt_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="#fff"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@id/rLak"
+        android:layout_aligntParentLeft="true"
+        android:layout_aligntParentStart="true"
+        android:layout_marginTop="27dp"/>
+    <Button
+        android:id="@+id/bt_back"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:background="@color/colorPrimary"
+        android:textColor="#fff"
+        android:layout_below="@id/bt_register"
+        android:layout_aligntParentLeft="true"
+        android:layout_aligntParentStart="true"/>
+
+
+</LinearLayout>
